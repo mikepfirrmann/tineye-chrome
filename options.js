@@ -1,15 +1,24 @@
-var $=(function() {
-	var idToElMap={};
+/*
+Copyright (c) 2010 Mike Pfirrmann
 
-	return function(id) {
-		if ("string"!==typeof id) return null;
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
 
-		if ("undefined"!==typeof idToElMap[id]) return idToElMap[id];
+The above copyright notice and this permission notice shall be included in
+all copies or substantial portions of the Software.
 
-		idToElMap[id]=document.getElementById(id);
-		return idToElMap[id];
-	};
-})();
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN
+THE SOFTWARE.
+*/
 
 var options={
 	init: function() {
@@ -20,7 +29,8 @@ var options={
 	},
 
 	attachEvents: function() {
-		var formEl=$('options');
+		var $=document.getElementById,
+			formEl=$('options');
 		if (!formEl) return;
 
 		formEl.onsubmit=this.handleSubmit;
@@ -29,7 +39,8 @@ var options={
 	handleSubmit: function() {
 		var elementIds=[],
 			el=null,
-			i=null;
+			i=null,
+			$=document.getElementById;
 
 		elementIds=[
 			'sortOrderLastUsedRadio',
@@ -84,7 +95,8 @@ var options={
 		numElementIds=elementIds.length,
 		i=null,
 		el=null,
-		textDirection=chrome.i18n.getMessage("@@bidi_dir");
+		textDirection=chrome.i18n.getMessage("@@bidi_dir"),
+		$=document.getElementById;
 
 		for (i=numElementIds; i>=0; --i) {
 			el=$(elementIds[i]);
@@ -106,7 +118,8 @@ var options={
 			tabVisibility=localStorage["tabVisibility"],
 			elementIds=[],
 			el=null,
-			i=null;
+			i=null,
+			$=document.getElementById;
 
 		elementIds=[
 			'sortOrderLastUsedRadio',
