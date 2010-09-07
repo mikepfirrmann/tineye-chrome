@@ -1,0 +1,16 @@
+{
+	"name": "__MSG_extensionTitle__",
+	"version": "1.0.0.0",
+
+	"description": "__MSG_extensionDescription__",
+	"icons": {
+		"16": "tineye.16.ico",
+		"48": "tineye.48.png",
+		"128": "tineye.128.png"
+	},
+	"default_locale": "en",
+
+	"background_page": "tineye.html",
+	"options_page": "options.html",
+	"permissions": ["contextMenus", "tabs"]
+}

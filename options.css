@@ -1,0 +1,80 @@
+body {
+	float: left;
+
+	background: #649BB9;
+
+	font-family: Helvetica, sans-serif;
+	font-size: 62.5%;
+}
+
+h1 {
+	color: #fff;
+	font-size: 3.5em;
+	line-height: 0.3em;
+	text-shadow: 0.1em 0.1em 0.4em #666;
+}
+
+form {
+	border-radius: 2em;
+	padding: 3em;
+	background: #fff;
+	-webkit-box-shadow: 0.3em 0.3em 0.5em #777;
+
+	color: #444;
+}
+
+fieldset {
+	border: 0.15em solid #649BB9;
+	border-radius: 0.75em;
+}
+
+legend {
+	font-size: 2em;
+	text-shadow: 0.1em 0.1em 0.2em #bbb;
+}
+
+label {
+	display: block;
+
+	height: 1.5em;
+
+	font-size: 1.5em;
+}
+
+label:hover {
+	background: #eee;
+	-webkit-box-shadow: 0.2em 0.2em 0.3em #ddd;
+}
+
+#openSearches, #submitButton {
+	margin-top: 1em;
+}
+
+#submitWrapper {
+	text-align: center;
+}
+
+#submitButton {
+	border: 0.1em solid #417293;
+	border-radius: 0.75em;
+	padding: 0.5em 1em;
+	background: #649BB9;
+	-webkit-box-shadow: 0.4em 0.4em 1em #aac;
+
+	color: #fff;
+	font-size: 1.6em;
+	font-weight: bold;
+	text-shadow: 0.1em 0.1em 0.3em #333;
+}
+
+#submitButton:hover {
+	background: #417293;
+}
+
+#submitButton:active {
+	position: relative;
+	top: 0.1em;
+	left: 0.1em;
+
+	-webkit-box-shadow: 0.3em 0.3em 0.9em #aac;
+}
