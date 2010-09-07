@@ -1,0 +1,62 @@
+{
+	"extensionTitle": {
+		"message": "TinEye",
+		"description": "The title of this extension"
+	},
+	"extensionDescription": {
+		"message": "Adds an option to the context menu of images to perform a reverse image search using www.tineye.com",
+		"description": "The description of this extension"
+	},
+	"contextMenuLabel": {
+		"message": "Search image on TinEye",
+		"description": "The text that appears in the context menu for images"
+	},
+	"optionsTitle": {
+		"message": "TinEye Options",
+		"description": "The title of the TinEyeextension options page"
+	},
+	"optionsHeader": {
+		"message": "TinEye Options",
+		"description": "The title of the TinEyeextension options page"
+	},
+	"sortOrderLabel": {
+		"message": "Sort Order",
+		"description": "The label for the sort order radio group"
+	},
+	"sortOrderLastUsedLabel": {
+		"message": "Last Used",
+		"description": "The label for the radio option indicating the 'last used' sort order"
+	},
+	"sortOrderBestMatchLabel": {
+		"message": "Best Match",
+		"description": "The label for the radio option indicating the 'best match' sort order"
+	},
+	"sortOrderMostChangedLabel": {
+		"message": "Most Changed",
+		"description": "The label for the radio option indicating the 'most changed' sort order"
+	},
+	"sortOrderBiggestImageLabel": {
+		"message": "Biggest Image",
+		"description": "The label for the radio option indicating the 'biggest image' sort order"
+	},
+	"openSearchesLabel": {
+		"message": "Open Searches",
+		"description": "The label for the radio group to select in which tab new searches will open"
+	},
+	"openSearchesBackgroundLabel": {
+		"message": "In a new tab (without focus)",
+		"description": "The label for the 'open searches in background tab' option"
+	},
+	"openSearchesForegroundLabel": {
+		"message": "In a new tab (with focus)",
+		"description": "The label for the 'open searches in foreground tab' option"
+	},
+	"openSearchesCurrentLabel": {
+		"message": "In the current tab",
+		"description": "The label for the 'open searches in current tab' option"
+	},
+	"submitButtonValue": {
+		"message": "Submit",
+		"description": "The label for the submit button on the options page"
+	}
+}
